@@ -34,3 +34,30 @@ enum MediaLibraryMetrics {
     }
 }
 
+enum InterestingMetrics {
+    static let hGridSpacing: CGFloat = 10
+    
+    static let titleFontSize: CGFloat = 11
+    static let subtitleFontSize: CGFloat = 16
+    static let descriptionFontSize: CGFloat = 14
+    
+    static let imageWidth: CGFloat = 300
+    static let imageHeight: CGFloat = 200
+    static let imageCornerRadius: CGFloat = 10
+    
+    static let padding: CGFloat = 10
+    
+    static let stackWidth: CGFloat = 300
+}
+
+enum StationListMetrics {
+    static let itemsPadding: CGFloat = 10
+    
+    static let imageSize: CGFloat = 120
+    static let imageCornerRadius: CGFloat = 10
+    
+    static let fontSize: CGFloat = 16
+    
+    static let dividerPadding: CGFloat = 5
+}
+
