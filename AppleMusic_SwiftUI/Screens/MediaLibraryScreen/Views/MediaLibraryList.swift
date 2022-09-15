@@ -20,11 +20,11 @@ struct MediaLibraryList: View {
                         Image(systemName: "\(item.icon)")
                             .foregroundColor(Color.red)
                         Text(item.listItem)
-                            .font(.system(size: 24, weight: .regular, design: .default))
+                            .font(.system(size: MediaLibraryMetrics.List.itemFontSize, weight: .regular, design: .default))
                             .multilineTextAlignment(.leading)
-                            .padding(.leading, 5)
+                            .padding(.leading, MediaLibraryMetrics.List.itemLeadingPadding)
                     }
-                    .frame(height: 50)
+                    .frame(height: MediaLibraryMetrics.List.stackHeight)
                 }
                 
                 .onMove { (IndexSet, Index) in

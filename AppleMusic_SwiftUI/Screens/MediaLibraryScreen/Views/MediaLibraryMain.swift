@@ -13,12 +13,12 @@ struct MediaLibraryMain: View {
            
             Spacer()
             
-            Text("Ищете свою музыку?")
-                .font(.system(size: 26, weight: .bold, design: .default))
-            Text("Здесь появится купленная Вами в iTunes Store музыка.")
+            Text(MediaLibraryConstants.Main.header)
+                .font(.system(size: MediaLibraryMetrics.Main.headerFontSize, weight: .bold, design: .default))
+            Text(MediaLibraryConstants.Main.description)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                .frame(width: 250)
+                .frame(width: MediaLibraryMetrics.Main.descriptionWidth)
                 .foregroundColor(.gray)
             
             Spacer()

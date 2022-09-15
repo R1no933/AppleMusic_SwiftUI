@@ -15,38 +15,41 @@ struct PlayingView: View {
         VStack {
             Divider()
             
-            HStack{
-                Image("playing_image")
-                    .frame(width: 40, height: 40)
-                    .cornerRadius(5)
+            HStack(alignment: .center){
+                Image(PlayingViewConstants.image)
+                    .resizable()
+                    .frame(width: PlayingViewMetrics.imageSize, height: PlayingViewMetrics.imageSize)
+                    .cornerRadius(PlayingViewMetrics.imageCornerRadius)
                     .scaledToFill()
                     .clipped()
-                    .padding([.leading, .trailing, .top, .bottom], 5)
-               
-                Text("Eminem - Spend Some Time")
+                    .padding([.leading, .trailing, .top, .bottom], PlayingViewMetrics.imagePadding)
+                
+                Text(PlayingViewConstants.playingText)
                 
                 Spacer()
                 
                 Button(action: {
                     print("Play buttom pressed")
                 }) {
-                    Image(systemName: "play.fill")
+                    Image(systemName: SFSymbols.playButton)
                 }
                 .foregroundColor(Color.black)
-                .padding(.horizontal, 10)
+                .padding(.horizontal, PlayingViewMetrics.playButtonPadding)
                 
                 Button(action: {
                     print("Next track buttom pressed")
                 }) {
-                    Image(systemName: "forward.fill")
+                    Image(systemName: SFSymbols.forwardButton)
                 }
                 .foregroundColor(Color.black)
-                .padding(.horizontal, 15)
-
+                .padding(.horizontal, PlayingViewMetrics.forwardButtonPadding)
+                
             }
+            .frame(height: PlayingViewMetrics.playingStackHeight)
             
             Divider()
         }
+        .background(.white)
     }
 }
 

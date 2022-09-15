@@ -24,15 +24,15 @@ struct MediaLibraryNavigation: View {
                     }
                 }
                 
-                .navigationBarTitle("Медиатека")
+                .navigationBarTitle(MediaLibraryConstants.Navigation.title)
                 .navigationBarItems(trailing: Button(action: {
                     isEditingType.toggle()
                 }, label: {
                     if isEditingType {
-                        Text("Править")
+                        Text(MediaLibraryConstants.Navigation.editButton)
                             .foregroundColor(Color.red)
                     } else {
-                        Text("Готово")
+                        Text(MediaLibraryConstants.Navigation.doneButton)
                             .foregroundColor(Color.red)
                     }
                 }))

@@ -9,34 +9,34 @@ import SwiftUI
 
 struct TabBar: View {
     var body: some View {
-        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
+        ZStack(alignment: .bottom) {
             TabView {
                 MediaLibraryNavigation()
                     .tabItem {
-                        Image(systemName: "music.note.list")
-                        Text("Медиатека")
+                        Image(systemName: SFSymbols.mediaLibraryIcon)
+                        Text(TabBarConstants.mediaLibraryLabel)
                     }
                 RadioView()
                     .tabItem {
-                        Image(systemName: "dot.radiowaves.left.and.right")
-                        Text("Радио")
+                        Image(systemName: SFSymbols.radioIcon)
+                        Text(TabBarConstants.radioLabel)
                     }
                 SearchView()
                     .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Поиск")
+                        Image(systemName: SFSymbols.searchIcon)
+                        Text(TabBarConstants.searchLabel)
                     }
             }
             
             .accentColor(Color .red)
             
             PlayingView()
-                .padding(.bottom, 50)
+                .padding(.bottom, TabBarMetrics.playingViewPadding)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
     }
