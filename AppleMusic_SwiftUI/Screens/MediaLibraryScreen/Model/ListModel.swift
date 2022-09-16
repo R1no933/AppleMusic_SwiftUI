@@ -14,15 +14,15 @@ struct ListModel: Hashable {
 
 extension ListModel {
     static var data = [
-        ListModel(icon: "music.note.list", listItem: "Плейлисты"),
-        ListModel(icon: "music.mic", listItem: "Артисты"),
-        ListModel(icon: "rectangle.stack", listItem: "Альбомы"),
-        ListModel(icon: "tv", listItem: "Телешоу и фильмы"),
-        ListModel(icon: "music.note.tv", listItem: "Видеоклипы"),
-        ListModel(icon: "guitars", listItem: "Жанры"),
-        ListModel(icon: "person.crop.rectangle.stack", listItem: "Сборники"),
-        ListModel(icon: "music.quarternote.3", listItem: "Авторы"),
-        ListModel(icon: "arrow.down.circle", listItem: "Загружено"),
-        ListModel(icon: "music.note.house", listItem: "Домашняя коллекция")
+        ListModel(icon: SFSymbols.playlists, listItem: MediaLibraryConstants.ListModel.playlists),
+        ListModel(icon: SFSymbols.artists, listItem: MediaLibraryConstants.ListModel.artists),
+        ListModel(icon: SFSymbols.albums, listItem: MediaLibraryConstants.ListModel.albums),
+        ListModel(icon: SFSymbols.tvAndFilms, listItem: MediaLibraryConstants.ListModel.tvAndFilms),
+        ListModel(icon: SFSymbols.clips, listItem: MediaLibraryConstants.ListModel.clips),
+        ListModel(icon: SFSymbols.genres, listItem: MediaLibraryConstants.ListModel.genres),
+        ListModel(icon: SFSymbols.collections, listItem: MediaLibraryConstants.ListModel.collections),
+        ListModel(icon: SFSymbols.authors, listItem: MediaLibraryConstants.ListModel.authors),
+        ListModel(icon: SFSymbols.download, listItem: MediaLibraryConstants.ListModel.download),
+        ListModel(icon: SFSymbols.homeCollection, listItem: MediaLibraryConstants.ListModel.homeCollection)
     ]
 }

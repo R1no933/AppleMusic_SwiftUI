@@ -16,7 +16,7 @@ struct TabBar: View {
                         Image(systemName: SFSymbols.mediaLibraryIcon)
                         Text(TabBarConstants.mediaLibraryLabel)
                     }
-                RadioView()
+                RadioNavigation()
                     .tabItem {
                         Image(systemName: SFSymbols.radioIcon)
                         Text(TabBarConstants.radioLabel)
