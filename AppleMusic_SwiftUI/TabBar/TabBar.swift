@@ -21,7 +21,7 @@ struct TabBar: View {
                         Image(systemName: SFSymbols.radioIcon)
                         Text(TabBarConstants.radioLabel)
                     }
-                SearchView()
+                SearchNavigation()
                     .tabItem {
                         Image(systemName: SFSymbols.searchIcon)
                         Text(TabBarConstants.searchLabel)
@@ -30,8 +30,8 @@ struct TabBar: View {
             
             .accentColor(Color .red)
             
-            PlayingView()
-                .padding(.bottom, TabBarMetrics.playingViewPadding)
+            //PlayerView()
+                //.padding(.bottom, TabBarMetrics.playingViewPadding)
         }
     }
 }

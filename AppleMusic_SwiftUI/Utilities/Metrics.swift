@@ -7,13 +7,18 @@
 
 import UIKit
 
-enum PlayingViewMetrics {
-    static let imageSize: CGFloat = 40
-    static let imagePadding: CGFloat = 2
-    static let imageCornerRadius: CGFloat = 5
-    static let playButtonPadding: CGFloat = 5
-    static let forwardButtonPadding: CGFloat = 5
-    static let playingStackHeight: CGFloat = 50
+enum PlayerViewMetrics {
+    enum SmallPlayer {
+        static let imageSize: CGFloat = 55
+        static let cornerRadius: CGFloat = 10
+        static let shadowRadius: CGFloat = 7
+    }
+    
+    enum FullscreenPlayer {
+        static let imageSize: CGFloat = 250
+        static let cornerRaadius: CGFloat = 10
+        static let swadowRadius: CGFloat = 7
+    }
 }
 
 enum TabBarMetrics {

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 //MARK: - Playing view cinstants
-enum PlayingViewConstants {
+enum PlayerViewConstants {
     static let image: String = "playing_image"
     static let playingText: String = "Eminem - Spend Some Time"
 }
@@ -133,6 +133,122 @@ enum RadioConstants {
     //Station list title
     enum StationList {
         static let title: String = "Станции"
+    }
+}
+
+//MARK: Search screen constants
+enum SearchConstants {
+    //Category image
+    enum CategoryModel {
+        static let firstImage: String = "90"
+        static let secontImage: String = "2000"
+        static let thirdImage: String = "2010"
+        static let fourthImage: String = "charts"
+        static let fifthImage: String = "dimensional"
+        static let sixthImage: String = "dream"
+        static let seventhImage: String = "for_gamers"
+        static let eighthImage: String = "for_kids"
+        static let ninthImage: String = "func"
+        static let tenthImage: String = "hits"
+        static let eleventhImage: String = "jazz"
+        static let twelfthImage: String = "main"
+        static let thirteenthImage: String = "relax"
+        static let fourteenthImage: String = "rnb"
+        static let fifteenthImage: String = "rus_hiphop"
+        static let sixteenthImage: String = "sport"
+    }
+    
+    //Playlist image
+    enum PlaylistModel {
+        static let firstImage: String = "first_playlist"
+        static let firstTitle: String = "СЛУШАЙТЕ ПРЯМО СЕЙЧАС"
+        static let firstSubtitle: String = "Хард-рок 90-х"
+        static let firstGenre: String = "Apple Music Хард-рок"
+        
+        static let secondImage: String = "second_playlist"
+        static let secondTitle: String = "ГОДОВЩИНА РЕЛИЗА"
+        static let secondSubtitle: String = "Sehnsucht"
+        static let secondGenre: String = "Rammstein"
+        
+        static let thirdImage: String = "third_playlist"
+        static let thirdTitle: String = "СЛУШАЙТЕ ПРЯМО СЕЙЧАС"
+        static let thirdSubtitle: String = "Ностальгия по инди 90-х"
+        static let thirdGenre: String = "Apple Music"
+        
+        static let fourthImage: String = "fourth_playlist"
+        static let fourthTitle: String = "ИЗБРАННЫЙ ПЛЕЙЛИСТ"
+        static let fourthSubtitle: String = "Хиты 90-х"
+        static let fourthGenre: String = "Apple Music 90-е"
+        
+        static let fifthImage: String = "fifth_playlist"
+        static let fifthTitle: String = "СЛУШАЙТЕ ПРЯМО СЕЙЧАС"
+        static let fifthSubtitle: String = "Альтернативная музыка 90-х"
+        static let fifthGenre: String = "Apple Music 90-е"
+        
+        static let sixthImage: String = "sixth_playlist"
+        static let sixthTitle: String = "СЛУШАЙТЕ ПРЯМО СЕЙЧАС"
+        static let sixthSubtitle: String = "R&B 90-x"
+        static let sixthGenre: String = "Apple Music 90-e"
+        
+    }
+    
+    //Tracks constants
+    enum TracksModel {
+        static let firstImage: String = "first_tracks"
+        static let firstTitle: String = "Поп-панк"
+        static let firstGenre: String = "Apple Music Панк"
+        
+        static let secondImage: String = "second_tracks"
+        static let secondTitle: String = "Riot Grrrl"
+        static let secondGenre: String = "Apple Music Панк"
+        
+        static let thirdImage: String = "third_tracks"
+        static let thirdTitle: String = "Дрма-н-бэйс"
+        static let thirdGenre: String = "Apple Music Электроника"
+        
+        static let fourthImage: String = "fourth_tracks"
+        static let fourthTitle: String = "Прогрессив хаус"
+        static let fourthGenre: String = "Apple Music Танцевальная"
+        
+        static let fifthImage: String = "fifth_tracks"
+        static let fifthTitle: String = "Ностальгия по рейву"
+        static let fifthGenre: String = "Apple Music Танцевальная"
+        
+        static let sixthImage: String = "sixth_tracks"
+        static let sixthTitle: String = "Поп-музыка"
+        static let sixthGenre: String = "Apple Music Поп"
+    }
+    
+    //Station contents
+    enum StationModel {
+        static let firstImage: String = "first_station"
+        static let firstTitle: String = "Золотая эра хип-хопа"
+        static let firstGenre: String = "Станция Apple Music"
+        
+        static let secondImage: String = "second_station"
+        static let secondTitle: String = "Хиты 90-х"
+        static let secondGenre: String = "Станция Apple Music"
+        
+        static let thirdImage: String = "third_station"
+        static let thirdTitle: String = "Классика альтренативы"
+        static let thirdGenre: String = "Станция Apple Music"
+        
+        static let fourthImage: String = "fourth_station"
+        static let fourthTitle: String = "R&B хиты"
+        static let fourthGenre: String = "Станция Apple Music"
+        
+        static let fifthImage: String = "fifth_station"
+        static let fifthTitle: String = "Панк"
+        static let fifthGenre: String = "Станция Apple Music"
+        
+        static let sixthImage: String = "sixth_station"
+        static let sixthTitle: String = "Классика инди"
+        static let sixthGenre: String = "Станция Apple Music"
+    }
+    
+    //Constants for category view
+    enum SearchCategoriesView {
+        static let title = "Поиск по категориям"
     }
 }
 
