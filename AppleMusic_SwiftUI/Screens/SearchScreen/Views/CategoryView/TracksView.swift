@@ -17,34 +17,34 @@ struct TracksView: View {
         VStack(alignment: .leading) {
             
             Divider()
-                .padding(.init(top: 20, leading: 0, bottom: 20, trailing: 0))
+                .padding(.init(top: SearchScreenMetrics.TracksAndStationView.dividerTopBot, leading: 0, bottom: SearchScreenMetrics.TracksAndStationView.dividerTopBot, trailing: 0))
             
             Text("Звучание 90-х")
-                .font(.system(size: 24, weight: .bold))
+                .font(.system(size: SearchScreenMetrics.TracksAndStationView.titleFontSize, weight: .bold))
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 10)
+                .padding(.leading, SearchScreenMetrics.TracksAndStationView.titlePadding)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHGrid(rows: tracksRow, spacing: 10) {
+                LazyHGrid(rows: tracksRow, spacing: SearchScreenMetrics.TracksAndStationView.gridSpacing) {
                     ForEach(data.data, id: \.id) { data in
                         VStack(alignment: .leading) {
                             Image(data.image)
                                 .resizable()
-                                .frame(width: 180, height: 165)
-                                .cornerRadius(10)
+                                .frame(width: SearchScreenMetrics.TracksAndStationView.imageWidht, height: SearchScreenMetrics.TracksAndStationView.imageHeight)
+                                .cornerRadius(SearchScreenMetrics.TracksAndStationView.cornerRadius)
                             Text(data.title)
-                                .font(.system(size: 14))
+                                .font(.system(size: SearchScreenMetrics.TracksAndStationView.textFontSize))
                                 .lineLimit(1)
-                                .padding(.leading, 5)
+                                .padding(.leading, SearchScreenMetrics.TracksAndStationView.textPadding)
                             Text(data.genre)
                                 .foregroundColor(.gray)
-                                .font(.system(size: 14))
+                                .font(.system(size: SearchScreenMetrics.TracksAndStationView.textFontSize))
                                 .lineLimit(1)
-                                .padding(.leading, 5)
+                                .padding(.leading, SearchScreenMetrics.TracksAndStationView.textPadding)
                         }
                     }
                 }
-                .padding(.leading, 10)
+                .padding(.leading, SearchScreenMetrics.TracksAndStationView.leadingPadding)
             }
         }
     }

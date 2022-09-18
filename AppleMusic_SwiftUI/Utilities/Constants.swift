@@ -8,10 +8,16 @@
 import Foundation
 import UIKit
 
-//MARK: - Playing view cinstants
-enum PlayerViewConstants {
+//MARK: - Players constant
+enum SmallPlayerConstants {
     static let image: String = "playing_image"
     static let playingText: String = "Eminem - Spend Some Time"
+}
+
+enum FullscreenPlayerConstants {
+    static let image: String = "playing_image"
+    static let artist: String = "Eminem"
+    static let song: String = "Spend Some Time"
 }
 
 //MARK: - Tab bar constants
@@ -257,6 +263,14 @@ enum SFSymbols {
     //Playing View
     static let playButton: String = "play.fill"
     static let forwardButton: String = "forward.fill"
+    static let backwardButton: String = "backward.fill"
+    static let pauseButton: String = "pause.fill"
+    static let elipsis: String = "ellipsis.circle.fill"
+    static let leftSpeaker: String = "speaker.fill"
+    static let rightSpeaker: String = "speaker.wave.2.fill"
+    static let songText: String = "quote.bubble.fill"
+    static let airPlay: String = "airplayaudio"
+    static let playlist: String = "list.bullet"
     
     //Tab bar
     static let mediaLibraryIcon: String = "music.note.list"
