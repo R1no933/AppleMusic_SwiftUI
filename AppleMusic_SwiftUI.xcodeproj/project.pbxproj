@@ -30,6 +30,9 @@
 		B7D1BB6C28D60EE800A9D2E9 /* TracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB6B28D60EE800A9D2E9 /* TracksView.swift */; };
 		B7D1BB6E28D6180900A9D2E9 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB6D28D6180900A9D2E9 /* StationModel.swift */; };
 		B7D1BB7128D61A4A00A9D2E9 /* StationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB7028D61A4A00A9D2E9 /* StationsView.swift */; };
+		B7D1BB7328D7179700A9D2E9 /* SmallPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB7228D7179700A9D2E9 /* SmallPlayerView.swift */; };
+		B7D1BB7528D717A500A9D2E9 /* FullScreenPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB7428D717A500A9D2E9 /* FullScreenPlayerView.swift */; };
+		B7D1BB7828D7579D00A9D2E9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1BB7728D7579C00A9D2E9 /* PlayerView.swift */; };
 		B7D6E39428D33C6100BCF40C /* InterestingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D6E39328D33C6100BCF40C /* InterestingModel.swift */; };
 		B7D6E39A28D34FB200BCF40C /* InterestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D6E39928D34FB200BCF40C /* InterestingView.swift */; };
 		B7D6E39C28D35D8500BCF40C /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D6E39B28D35D8400BCF40C /* StationListView.swift */; };
@@ -60,6 +63,9 @@
 		B7D1BB6B28D60EE800A9D2E9 /* TracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksView.swift; sourceTree = "<group>"; };
 		B7D1BB6D28D6180900A9D2E9 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
 		B7D1BB7028D61A4A00A9D2E9 /* StationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsView.swift; sourceTree = "<group>"; };
+		B7D1BB7228D7179700A9D2E9 /* SmallPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPlayerView.swift; sourceTree = "<group>"; };
+		B7D1BB7428D717A500A9D2E9 /* FullScreenPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPlayerView.swift; sourceTree = "<group>"; };
+		B7D1BB7728D7579C00A9D2E9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		B7D6E39328D33C6100BCF40C /* InterestingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingModel.swift; sourceTree = "<group>"; };
 		B7D6E39928D34FB200BCF40C /* InterestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingView.swift; sourceTree = "<group>"; };
 		B7D6E39B28D35D8400BCF40C /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 		B7AE095E28D2184900BEB36A /* PlayerView */ = {
 			isa = PBXGroup;
 			children = (
+				B7D1BB7228D7179700A9D2E9 /* SmallPlayerView.swift */,
+				B7D1BB7428D717A500A9D2E9 /* FullScreenPlayerView.swift */,
+				B7D1BB7728D7579C00A9D2E9 /* PlayerView.swift */,
 			);
 			path = PlayerView;
 			sourceTree = "<group>";
@@ -337,10 +346,13 @@
 				B7D1BB6A28D60EDC00A9D2E9 /* PlaylistsView.swift in Sources */,
 				B7894C2F28D308870079940F /* Constants.swift in Sources */,
 				B7D6E39C28D35D8500BCF40C /* StationListView.swift in Sources */,
+				B7D1BB7528D717A500A9D2E9 /* FullScreenPlayerView.swift in Sources */,
 				B7D1BB6228D5FB2200A9D2E9 /* SearchCategoiesListView.swift in Sources */,
 				B7D1BB6C28D60EE800A9D2E9 /* TracksView.swift in Sources */,
 				B7B5D63428D1F48700879C09 /* TabBar.swift in Sources */,
+				B7D1BB7828D7579D00A9D2E9 /* PlayerView.swift in Sources */,
 				B7D1BB6428D5FC4900A9D2E9 /* CategoryView.swift in Sources */,
+				B7D1BB7328D7179700A9D2E9 /* SmallPlayerView.swift in Sources */,
 				B7D1BB6828D6045800A9D2E9 /* TracksModel.swift in Sources */,
 				B7D1BB6628D5FE8800A9D2E9 /* PlaylistModel.swift in Sources */,
 				B7D1BB5028D5E5D200A9D2E9 /* SearchNavigation.swift in Sources */,

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @State var showedFullScreen = false
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -30,8 +33,8 @@ struct TabBar: View {
             
             .accentColor(Color .red)
             
-            //PlayerView()
-                //.padding(.bottom, TabBarMetrics.playingViewPadding)
+            PlayerView(showedFullScreen: $showedFullScreen)
+                .padding(.bottom, TabBarMetrics.playingViewPadding)
         }
     }
 }
@@ -39,5 +42,11 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+    }
+}
+
+extension TabBar {
+    private func tapOnPlayer() {
+        
     }
 }
