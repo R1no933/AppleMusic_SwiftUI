@@ -29,6 +29,11 @@ struct TabBar: View {
                         Image(systemName: SFSymbols.searchIcon)
                         Text(TabBarConstants.searchLabel)
                     }
+                SearchNavigationUIKit()
+                    .tabItem {
+                        Image(systemName: SFSymbols.searchIcon)
+                        Text("Поиск UIKit")
+                    }
             }
             
             .accentColor(Color .red)

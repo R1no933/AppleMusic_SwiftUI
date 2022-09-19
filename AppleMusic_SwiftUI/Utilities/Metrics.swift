@@ -79,7 +79,7 @@ enum SearchScreenMetrics {
         static let girdSpacing: CGFloat = 10
         
         static let imageWidth: CGFloat = 350
-        static let imageHeight: CGFloat = 350
+        static let imageHeight: CGFloat = 280
         static let cornerRadius: CGFloat = 10
         
         static let padding: CGFloat = 10

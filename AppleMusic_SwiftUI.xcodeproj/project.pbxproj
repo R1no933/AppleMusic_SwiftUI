@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B755E95528D84FA7006B0847 /* SearchCategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E95428D84FA7006B0847 /* SearchCategoryImage.swift */; };
+		B755E95728D85078006B0847 /* SearchCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E95628D85078006B0847 /* SearchCategoryCell.swift */; };
+		B755E95A28D852B3006B0847 /* CollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E95928D852B3006B0847 /* CollectionFlowLayout.swift */; };
+		B755E95D28D85565006B0847 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E95C28D85565006B0847 /* SearchViewController.swift */; };
+		B755E96028D85AC1006B0847 /* HostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E95F28D85AC1006B0847 /* HostView.swift */; };
+		B755E96228D85ADA006B0847 /* UIKitToSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E96128D85ADA006B0847 /* UIKitToSwiftUI.swift */; };
+		B755E96428D85F04006B0847 /* SearchNavigationUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B755E96328D85F04006B0847 /* SearchNavigationUIKit.swift */; };
 		B7894C2F28D308870079940F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894C2E28D308870079940F /* Constants.swift */; };
 		B7894C3128D308F60079940F /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894C3028D308F60079940F /* Metrics.swift */; };
 		B7894C3628D333CD0079940F /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7894C3528D333CD0079940F /* RadioModel.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B755E95428D84FA7006B0847 /* SearchCategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryImage.swift; sourceTree = "<group>"; };
+		B755E95628D85078006B0847 /* SearchCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoryCell.swift; sourceTree = "<group>"; };
+		B755E95928D852B3006B0847 /* CollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFlowLayout.swift; sourceTree = "<group>"; };
+		B755E95C28D85565006B0847 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B755E95F28D85AC1006B0847 /* HostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostView.swift; sourceTree = "<group>"; };
+		B755E96128D85ADA006B0847 /* UIKitToSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitToSwiftUI.swift; sourceTree = "<group>"; };
+		B755E96328D85F04006B0847 /* SearchNavigationUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigationUIKit.swift; sourceTree = "<group>"; };
 		B7894C2E28D308870079940F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B7894C3028D308F60079940F /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
 		B7894C3528D333CD0079940F /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
@@ -82,6 +96,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B755E95228D84F74006B0847 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B755E95E28D85AB1006B0847 /* IntegrationViews */,
+				B755E95B28D8554F006B0847 /* Screens */,
+				B755E95828D85295006B0847 /* Utilities */,
+				B755E95328D84F8A006B0847 /* CustomViews */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B755E95328D84F8A006B0847 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B755E95428D84FA7006B0847 /* SearchCategoryImage.swift */,
+				B755E95628D85078006B0847 /* SearchCategoryCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B755E95828D85295006B0847 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B755E95928D852B3006B0847 /* CollectionFlowLayout.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B755E95B28D8554F006B0847 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B755E95C28D85565006B0847 /* SearchViewController.swift */,
+				B755E96328D85F04006B0847 /* SearchNavigationUIKit.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B755E95E28D85AB1006B0847 /* IntegrationViews */ = {
+			isa = PBXGroup;
+			children = (
+				B755E95F28D85AC1006B0847 /* HostView.swift */,
+				B755E96128D85ADA006B0847 /* UIKitToSwiftUI.swift */,
+			);
+			path = IntegrationViews;
+			sourceTree = "<group>";
+		};
 		B7894C2D28D308330079940F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +199,7 @@
 		B7AE094A28D1F91C00BEB36A /* SearchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B755E95228D84F74006B0847 /* UIKit */,
 				B7D1BB4C28D5E25400A9D2E9 /* Models */,
 				B7D1BB4928D5DC5700A9D2E9 /* Views */,
 			);
@@ -332,22 +393,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B755E96428D85F04006B0847 /* SearchNavigationUIKit.swift in Sources */,
 				B7D6E39A28D34FB200BCF40C /* InterestingView.swift in Sources */,
 				B7D6E39428D33C6100BCF40C /* InterestingModel.swift in Sources */,
+				B755E96028D85AC1006B0847 /* HostView.swift in Sources */,
 				B7D1BB6028D5FAA600A9D2E9 /* SearchCategoriesView.swift in Sources */,
 				B7D1BB7128D61A4A00A9D2E9 /* StationsView.swift in Sources */,
 				B7AE095628D20C8300BEB36A /* MediaLibraryList.swift in Sources */,
 				B7D1BB4E28D5E27B00A9D2E9 /* CategoryModel.swift in Sources */,
 				B7894C3128D308F60079940F /* Metrics.swift in Sources */,
+				B755E95D28D85565006B0847 /* SearchViewController.swift in Sources */,
+				B755E95728D85078006B0847 /* SearchCategoryCell.swift in Sources */,
 				B7AE094E28D1FA2900BEB36A /* RadioNavigation.swift in Sources */,
+				B755E95A28D852B3006B0847 /* CollectionFlowLayout.swift in Sources */,
 				B7D1BB6E28D6180900A9D2E9 /* StationModel.swift in Sources */,
 				B7AE095228D1FFCE00BEB36A /* MediaLibraryNavigation.swift in Sources */,
 				B7AE095428D20C5100BEB36A /* MediaLibraryMain.swift in Sources */,
 				B7D1BB6A28D60EDC00A9D2E9 /* PlaylistsView.swift in Sources */,
+				B755E95528D84FA7006B0847 /* SearchCategoryImage.swift in Sources */,
 				B7894C2F28D308870079940F /* Constants.swift in Sources */,
 				B7D6E39C28D35D8500BCF40C /* StationListView.swift in Sources */,
 				B7D1BB7528D717A500A9D2E9 /* FullScreenPlayerView.swift in Sources */,
 				B7D1BB6228D5FB2200A9D2E9 /* SearchCategoiesListView.swift in Sources */,
+				B755E96228D85ADA006B0847 /* UIKitToSwiftUI.swift in Sources */,
 				B7D1BB6C28D60EE800A9D2E9 /* TracksView.swift in Sources */,
 				B7B5D63428D1F48700879C09 /* TabBar.swift in Sources */,
 				B7D1BB7828D7579D00A9D2E9 /* PlayerView.swift in Sources */,
