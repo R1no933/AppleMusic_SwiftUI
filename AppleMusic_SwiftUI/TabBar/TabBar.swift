@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @State var showedFullScreen = false
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView {
@@ -26,12 +29,17 @@ struct TabBar: View {
                         Image(systemName: SFSymbols.searchIcon)
                         Text(TabBarConstants.searchLabel)
                     }
+                SearchNavigationUIKit()
+                    .tabItem {
+                        Image(systemName: SFSymbols.searchIcon)
+                        Text("Поиск UIKit")
+                    }
             }
             
             .accentColor(Color .red)
             
-            //PlayerView()
-                //.padding(.bottom, TabBarMetrics.playingViewPadding)
+            PlayerView(showedFullScreen: $showedFullScreen)
+                .padding(.bottom, TabBarMetrics.playingViewPadding)
         }
     }
 }
@@ -39,5 +47,11 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+    }
+}
+
+extension TabBar {
+    private func tapOnPlayer() {
+        
     }
 }

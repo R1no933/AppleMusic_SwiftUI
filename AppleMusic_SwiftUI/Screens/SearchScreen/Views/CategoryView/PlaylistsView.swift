@@ -15,28 +15,28 @@ struct PlaylistsView: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            LazyHGrid(rows: playlistRow, spacing: 10) {
+            LazyHGrid(rows: playlistRow, spacing: SearchScreenMetrics.PlaylistView.girdSpacing) {
                 ForEach(data.data, id: \.id) { data in
                     VStack(alignment: .leading) {
                         Divider()
                         
                         Text(data.title)
                             .foregroundColor(.gray)
-                            .font(.system(size: 12))
+                            .font(.system(size: SearchScreenMetrics.PlaylistView.titleFontSize))
                         Text(data.subtitle)
-                            .font(.system(size: 16))
+                            .font(.system(size: SearchScreenMetrics.PlaylistView.subtitleFontSize))
                         Text(data.genre)
                             .foregroundColor(.gray)
-                            .font(.system(size: 16))
+                            .font(.system(size: SearchScreenMetrics.PlaylistView.subtitleFontSize))
                             .lineLimit(1)
                         Image(data.image)
                             .resizable()
-                            .frame(width: 350, height: 250)
-                            .cornerRadius(10)
+                            .frame(width: SearchScreenMetrics.PlaylistView.imageWidth, height: SearchScreenMetrics.PlaylistView.imageHeight)
+                            .cornerRadius(SearchScreenMetrics.PlaylistView.cornerRadius)
                     }
                 }
             }
-            .padding(10)
+            .padding(SearchScreenMetrics.PlaylistView.padding)
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 //MARK: - Model struct
-struct CategoryModel: Identifiable {
+struct CategoryModel: Identifiable, Hashable {
     let id = UUID()
     let image: String
 }

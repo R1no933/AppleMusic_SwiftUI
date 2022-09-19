@@ -15,9 +15,9 @@ struct SearchCategoriesView: View {
         ZStack(alignment: .leading) {
             Image(self.image)
                 .resizable()
-                .frame(width: 200, height: 170)
+                .frame(width: SearchScreenMetrics.SearchCategoriesView.imageWidth, height: SearchScreenMetrics.SearchCategoriesView.imageHeight)
                 .scaledToFit()
-                .cornerRadius(10)
+                .cornerRadius(SearchScreenMetrics.SearchCategoriesView.cornerRadius)
         }
     }
 }
